@@ -14,8 +14,8 @@
     </nav>
     <div class="home" id="home">
         <br><br><br><br>
-        <h1><i> Hello,I am <B><U>RIZWAN</U></B></i> </h1>
-        <h1><i> From <B><U>HAVERI</U></B></i></h1>  
+        <h1><i> Hello,I am <b><u> RIZWAN</u></b></i> </h1>
+        <h1><i> From <b><u>HAVERI</u></b></i></h1>  
     </div>
     <div class="about" id="about">
         <h1>About ME</h1>
@@ -48,8 +48,8 @@
                     <td>2022</td>
                     <td>2025</td>
                     <td>80%</td>
-                </tr>>
                 </tr>
+                
                 
             </tbody>
 
@@ -67,13 +67,12 @@
                 <li>CELLO</li>
                 <li >Jello</li>
                 <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia inventore autem dolores fugit optio consequuntur, magni explicabo numquam iste ratione eos quasi corporis dolor nemo cupiditate ad, est ab. Quis!<li class="li1">Hello</li>
-            </ul> 
-            <H2>Pro Skills</H2>
+            
+            <h2>Pro Skills</h2>
                 <li >Hello</li>
                 <li >CELLO</li>
                 <li >Jello</li>   
-
-        </div>
+            </div>
         <div class="project" >
             <h2>Project</h2>
             <ul> 
@@ -83,20 +82,74 @@
                 <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia inventore autem dolores fugit optio consequuntur, magni explicabo numquam iste ratione eos quasi corporis dolor nemo cupiditate ad, est ab. Quis!<li class="li1">Hello</li>
                     <li >CELLO</li>
                     <li >Jello</li></p>
-            </ul> 
+            </ul>
             <H2>Pro Skills</H2>
-            <li class="li1">Hello</li>
-                <li class="li1">CELLO</li>
-                <li class="li1">Jello</li>   
+                <li >Hello</li>
+                <li >CELLO</li>
+                <li >Jello</li> 
+                  
+                  
+                  
+
 
             
         </div>
         
         
      </div> 
-     <div class="contact">
+     <div class="contact" id="contact" >
         <h1>Contact Support</h1><br>
         <h1>contact no: 7676663178</h1>
+        <form acton="mailto:mdrzwan2002kallapur@gmail.com">
+            <table>
+                <tr>
+                    <td>
+                        <label for="username">NAME</label>
+                    </td>
+            
+                
+                    <td>
+                        <input type="text" name="username" placeholder="RIZWANROXX">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label type="Phno">Phone number</label>
+                    </td>
+                
+                
+                    <td>
+                                 
+            <input type="text"><br>
+                    </td>
+                    </tr>
+                    <tr>
+                
+                    <td>
+                        
+            <label for="msg">Message</label>
+                    </td>
+                    <br>
+                
+                    <td>
+                        <textarea name="msg">Message</textarea>
+                    </td>
+                    </tr>
+                    <br>
+
+
+                
+<tr>
+               <td></td>
+                <td>
+                    <button type="submit">Send</button>
+                </td>
+                <br>
+            </tr>
+            </table>
+           
+        </form>
+
         
 
       </div>
@@ -106,6 +159,21 @@
 </html>
 
 <style>
+    .contact table{
+        margin: auto;
+        color: brown;
+    }
+
+    .contact button{
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: none;
+
+    }
+    
+    .contact button:hover{
+        background-color: blueviolet;
+    }
     .contact{
         text-align: center;
         background-color: aquamarine;
@@ -177,6 +245,12 @@
 
  }
 
+ @media screen and (max-width: 480px) {
+  .about {
+    padding: 0;
+    background-color: red;
+  }
+}
     
  
 </style>
