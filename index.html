@@ -3,260 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>www.My Portfolio.com</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="#home">home</a>
-        <a href="#about">About</a>
-        <a href="#skill">skills & Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="home" id="HOME" >
-        <br><br><br><br>
-        <h1>Hey there! it's me <i><b> RIZWAN</b></i> </h1>
-        <h1>Welcome To My Webpage</h1>  
-    </div>
-    <div class="about" id="about">
-        <h1>About ME</h1>
-        <p></p>
-        <br>
-        <p></p>
-        <table >
-            <thead>
-                 <th>Studies</th>
-                 <th>Place</th>
-                 <th>Field of Study</th>
-                 <th>Start year</th>
-                 <th>End Year</th>
-                 <th>Grade</th>
-
-            </thead>
-            <tbody>
-                <tr>
-                    <td>LEMS</td>
-                    <td>Heveri</td>
-                    <td>English Medium</td>
-                    <td>2009</td>
-                    <td>2019</td>
-                    <td>72%</td>
-                </tr>
-                <tr>
-                    <td>Diploma</td>
-                    <td>Haveri</td>
-                    <td>ME</td>
-                    <td>2019</td>
-                    <td>2022</td>
-                    <td>75%</td>
-                </tr>
-                <tr>
-                    <td>BE Engg</td>
-                    <td>Davangere</td>
-                    <td>ME</td>
-                    <td>2022</td>
-                    <td>2025</td>
-                    <td>75%</td>
-
-                </tr>
-                
-                
-            </tbody>
-
-            
-        </table>
-    </div> 
-     <div class="skill" id="skill">
-        <br>
-        <h1><u>Skills & Project</u></h1>
-        <br>
-        
-            <h2>Skills:-</h2>
-             
-                <li>Mastered in making the Portfolio Websites</li>
-                <li>Knows How to operate the CNC Machines like Lathes,Milling Machines </li>
-                <li>Learned Basic C Programming</li>
-                <li>Worked as Mechanic in Cars Showroom</li>
-            
-           
-
-       
-                 
-            <div class="project" >
-            <h2><u>Projects:-</u></h2>
-           
-                <li>Made a Project on CNC machines</li>
-                <li>Made a Project on PLC board</li>
-                <li>Made a Project on Web Technology</li>
-                <li>Made a Project on Boilers</li>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Rlogo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                    
-            
-                  
-                  
+                </ul>
+                
+            </nav>
+            <div class="head-text">
+                <h1>Hey It's me <span>Rizwan</span><br>From Haveri</h1>
+                
+            </div>
 
+        </div> 
+    </div>
+     <!----------about--------->
+    <div id="about" >
+        <div class="container">
+            <div class="raw">
+                <div class="about-col-1">
+                    <img src="user2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey Myself Rizwan ,I am an Engineering Student Studing in GM University ,Davangere</p>
 
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Project')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>CNC Machine</span><br>Knows How to operate the CNC Machines like Lathes,Milling Machines</li>
+                            <li><span>Web Development</span><br>Mastered in making the Portfolio Websites</li>
+                            <li><span>PLC Board</span><br>Experience in Operating PLC Board<br></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Project">
+                        <ul>
+                            <li><span>CNC Machine</span><br>Project on Operating CNC Machine</li>
+                            <li><span>Web Development</span><br> Project on Website Development</li>
+                            <li><span>PLC Board</span><br>Project on Designing & working of PLC Board </li>
+                            <li><span>Boilers</span><br>Project on Construction & Working of Boilers</li>
+                        </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>School</span><br>Lions English Medium School,Haveri(2009-2019)</li>
+                            <li><span>Diploma</span><br>Govt Polytechnic,Bankapur(2019-2022) </li>
+                            <li><span>Engineering</span><br>GM University,Devengere(2022-2025)</li>
+                            
+                        </ul>
+            </div>
             
         </div>
-        
-        
-     </div> 
-     <div class="contact" id="contact" >
-        <h1>Contact Support</h1><br>
-        <h1>contact no: 7676663178</h1>
-        <form acton="mailto:mdrzwan2002kallapur@gmail.com">
-            <table>
-                <tr>
-                    <td>
-                        <label for="username">NAME</label>
-                    </td>
-            
-                
-                    <td>
-                        <input type="text" name="username" placeholder="RIZWANROXX">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label type="Phno">Phone number</label>
-                    </td>
-                
-                
-                    <td>
-                                 
-            <input type="text"><br>
-                    </td>
-                    </tr>
-                    <tr>
-                
-                    <td>
+    </div>
+    <!-----------contact-----------  ----> 
+    <div id="contact">
+        <div class="container">
+             <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i>&#128511</i><u>mdrizwan2002kallapur@gmail.com</u></p>
+                    <p><i>&#128204</i><u>7676663178</u></p>
+                    <div class="social-icons">
+                        <a href=""></a>
+                        <a href=""></a>
                         
-            <label for="msg">Message</label>
-                    </td>
-                    <br>
-                
-                    <td>
-                        <textarea name="msg">Message</textarea>
-                    </td>
-                    </tr>
-                    <br>
+                        
+                    </div>
+                    
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required><br>
+                        <br>
+                        <input type="email" name="email" placeholder="Your email" required><br>
+                        <br>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea><br>
+                        <br>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
 
+               
 
-                
-<tr>
-               <td></td>
-                <td>
-                    <button type="submit">Send</button>
-                </td>
-                <br>
-            </tr>
-            </table>
-           
-        </form>
+            </div>
 
-        
+        </div>
+    </div>
+<script>
 
-      </div>
-      
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+    
 </body>
-
 </html>
-
-<style>
-    .contact table{
-        margin: auto;
-        color: brown;
-    }
-
-    .contact button{
-        padding: 10px 30px;
-        border-radius: 5px;
-        border: none;
-
-    }
-    
-    .contact button:hover{
-        background-color: blueviolet;
-    }
-    .contact{
-        text-align: center;
-        background-color: aquamarine;
-        height: 100vh;
-        font-style: oblique;
-        
-
-    
-
-    }
-    a{
-        text-decoration: none;
-        color: rgba(0, 0, 0, 0.993);
-        padding: 10px 15px;
-    }
-    nav{
-        background-color: blueviolet ;
-        padding-top: 20px;
-        position: fixed;
-        width: 100vw;
-    }
-    .project{
-        height: 100vh;
-        background-color: chartreuse;
-        text-align: center;
-        text-align: justify;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 25px;
-        border-radius: 5px;
-    }
-    .skill{
-        height: 100vh;
-        background-color: rgb(156, 77, 77);
-        text-align: left;
-        text-align: justify;
-        font-family: 'Times New Roman', Times, serif;
-        background-color: chocolate;
-        font-size: 25px;
-       
-    }  
-    
-
-    body{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    }
- .home{
-    background-color: blueviolet;
-    height: 100vh;
-    background-image: url(rizwanroxx_786-20231113-0001-removebg-preview.png); 
-    background-repeat: no-repeat; 
-    background-size: contain; 
-    background-position: left;
-    color:black;
-    font-size: 25px;
-    text-align: right;
-    padding-top: 250px;
-    padding-right: 100px;
-    font-family: 'Times New Roman', Times, serif;
-
-
-
- }
- .about{
-    height: 100vh;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: justify;
- }
- th,td{
-    padding:  10px 30px;
-
- }
-
- @media screen and (max-width: 480px) {
-  .about {
-    padding: 0;
-    background-color: red;
-  }
-}
-    
- 
-</style>
